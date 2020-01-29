@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Pizza, Pizza, PIZZA!</title>
+</head>
+<body>
+
+<!--
+    Project: Pizza Ordering Menu
+    Purpose: JavaScript practice project also implementing HTML, CSS, and mobile first responsive design
+ -->
+
+<div class="main-container">
+    <h1>Pizza Ordering Menu</h1>
+
+    <div class="sub-container">
+        <h3>Pizza Size</h3>
+        <input id="personal" class="size" type="radio" name="size" value="personal">
+        <label for="personal">Personal</label>
+        <input id="medium" class="size" type="radio" name="size" value="medium">
+        <label for="medium">Medium</label>
+        <input id="large" class="size" type="radio" name="size" value="large" checked>
+        <label for="large">Large</label>
+        <input id="extraLarge" class="size" type="radio" name="size" value="extraLarge">
+        <label for="extraLarge">Extra Large</label>
+    </div>
+
+    <div class="sub-container">
+        <h3>Meat Toppings</h3>
+        <input id="pepperoni" class="meat" type="checkbox" name="meat" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <input id="sausage" class="meat" type="checkbox" name="meat" value="sausage">
+        <label for="sausage">Sausage</label>
+        <input id="bacon" class="meat" type="checkbox" name="meat" value="bacon">
+        <label for="bacon">Bacon</label>
+        <input id="groundBeef" class="meat" type="checkbox" name="meat" value="groundBeef">
+        <label for="groundBeef">Ground Beef</label>
+        <input id="anchovy" class="meat" type="checkbox" name="meat" value="anchovy">
+        <label for="anchovy">Anchovy</label>
+        <input id="chicken" class="meat" type="checkbox" name="meat" value="chicken">
+        <label for="chicken">Chicken</label>
+    </div>
+
+    <div class="sub-container">
+        <h3>Veggie Toppings</h3>
+        <input id="tomato" class="veggie" type="checkbox" name="veggie" value="tomato">
+        <label for="tomato">Tomato</label>
+        <input id="onion" class="veggie" type="checkbox" name="veggie" value="onion">
+        <label for="onion">Onion</label>
+        <input id="olive" class="veggie" type="checkbox" name="veggie" value="olive">
+        <label for="olive">Olive</label>
+        <input id="greenPepper" class="veggie" type="checkbox" name="veggie" value="greenPepper">
+        <label for="greenPepper">Green Pepper</label>
+        <input id="mushroom" class="veggie" type="checkbox" name="veggie" value="mushroom">
+        <label for="mushroom">Mushroom</label>
+        <input id="pineapple" class="veggie" type="checkbox" name="veggie" value="pineapple">
+        <label for="pineapple">Pineapple</label>
+        <input id="spinach" class="veggie" type="checkbox" name="veggie" value="spinach">
+        <label for="spinach">Spinach</label>
+        <input id="jalapeno" class="veggie" type="checkbox" name="veggie" value="jalapeno">
+        <label for="jalapeno">Jalapeno</label>
+    </div>
+
+    <div class="sub-container">
+        <h3>Sauce</h3>
+        <input id="marineraSauce" class="sauce" type="radio" name="sauce" value="marineraSauce" checked>
+        <label for="marineraSauce">Marinera Sauce</label>
+        <input id="whiteSauce" class="sauce" type="radio" name="sauce" value="whiteSauce">
+        <label for="whiteSauce">White Sauce</label>
+        <input id="barbequeSauce" class="sauce" type="radio" name="sauce" value="barbequeSauce">
+        <label for="barbequeSauce">Barbeque Sauce</label>
+        <input id="noSauce" class="sauce" type="radio" name="sauce" value="noSauce">
+        <label for="noSauce">No Sauce</label>
+    </div>
+
+    <div class="sub-container">
+        <h3>Cheese</h3>
+        <input id="regular" class="cheese" type="radio" name="cheese" value="regular" checked>
+        <label for="regular">Regular</label>
+        <input id="extraCheese" class="cheese" type="radio" name="cheese" value="extraCheese">
+        <label for="extraCheese">Extra Cheese</label>
+        <input id="noCheese" class="cheese" type="radio" name="cheese" value="noCheese">
+        <label for="noCheese">No Cheese</label>
+    </div>
+
+    <div class="sub-container">
+        <h3>Crust</h3>
+        <input id="plainCrust" class="crust" type="radio" name="crust" value="plainCrust" checked>
+        <label for="plainCrust">Plain Crust</label>
+        <input id="garlicButterCrust" class="crust" type="radio" name="crust" value="garlicButterCrust">
+        <label for="garlicButterCrust">Garlic Butter Crust</label>
+        <input id="cheeseStuffedCrust" class="crust" type="radio" name="crust" value="cheeseStuffedCrust">
+        <label for="cheeseStuffedCrust">Cheese Stuffed Crust</label>
+        <input id="spicyCrust" class="crust" type="radio" name="crust" value="spicyCrust">
+        <label for="spicyCrust">Spicy Crust</label>
+        <input id="houseSpecialCrust" class="crust" type="radio" name="crust" value="houseSpecialCrust">
+        <label for="houseSpecialCrust">House Special Crust</label>
+    </div>
+    
+    <div class="center">
+        <input type="button" value="Order" onclick="order()">
+    </div>
+    <!-- order receipt table -->
+    <div id="tableDiv"></div>
+</div>
+
+</body>
+</html>
